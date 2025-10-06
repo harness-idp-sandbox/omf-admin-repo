@@ -1,0 +1,28 @@
+OMF parameter mapping (use with the parameterized template):
+
+__PIPELINE_NAME__: E2E React App Provisioning
+__PIPELINE_IDENTIFIER__: E2E_React_App_Provisioning
+__PROJECT_ID__: Reference_Architecture
+__ORG_ID__: default
+
+# Connectors & infra
+__JIRA_CONNECTOR__: account.Harness_Jira
+__JIRA_PROJECT_KEY__: HD
+__K8S_CONNECTOR__: account.harnesseks
+__DELEGATE_NAMESPACE__: harness-delegate-ng
+__DELEGATE_SELECTOR__: harness-delegate-omf
+__REGISTRY_REF__: org.org-docker
+__REGISTRY_CONNECTOR_FOR_IMAGES__: account.Harness_Docker
+__RUNNER_IMAGE__: parsontodd/harness-custom-runner:latest
+__GIT_CONNECTOR__: account.harnessgithub
+__SERVICENOW_CONNECTOR__: account.Harness_ServiceNow
+
+# GitHub + template
+__GITHUB_ORG__: harness-idp-sandbox
+__MONOREPO_NAME__: monorepo-idp-example
+__COOKIECUTTER_TEMPLATE_URL__: https://github.com/harness-idp-sandbox/app-template-react-monorepo.git
+
+# Secrets
+__GH_TOKEN_SECRET__: account.harness-github-pat
+__CATALOG_GITHUB_CONNECTOR__: account.harnessgithub
+__HARNESS_PLATFORM_API_KEY_SECRET__: account.harness-api
